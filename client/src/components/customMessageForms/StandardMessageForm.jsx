@@ -12,6 +12,9 @@ function StandardMessageForm({ props, activeChat }) {
       .toISOString()
       .replace("T", " ")
       .replace("Z", `${Math.floor(Math.random() * 1000)}+00:00`);
+    /* const date = new Date().toLocaleString("en-US", {
+      timeZone: "America/Toronto",
+    }); */
     const at = attachment ? [{ blob: attachment, file: attachment.name }] : [];
     //Base on documentation of Chat Engine
     const form = {
