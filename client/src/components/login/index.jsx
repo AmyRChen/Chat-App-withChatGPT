@@ -16,6 +16,7 @@ const Login = ({ setUser, setSecret }) => {
     triggerSignUp({ username, password })
       .then(() => {
         alert("Sign-up successful!"); // show success message
+        setIsRegister(false);
       })
       .catch((error) => {
         console.error("Sign-up failed:", error); // log error
