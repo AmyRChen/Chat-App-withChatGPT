@@ -9,4 +9,9 @@ export default defineConfig({
     // Replace @ with current directory that leads up to our source dir
     alias: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
   },
+  build: {
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
+  },
 });
