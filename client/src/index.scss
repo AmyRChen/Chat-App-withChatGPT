@@ -299,14 +299,10 @@ body,
   content: "Create 'AiChat_chat name' for Ai chatbot \a 'AiCode_chat name' for coding helper \a 'AiAssist_chat name' for content assistant";
   position: absolute;
   width: 200px;
-  top: 50%;
-  left: 100%;
+  top: -5px;
+  right: 105%;
   transform: translate(-50%, 10px);
   padding: 5px;
-  margin-top: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent transparent black;
   background-color: #333;
   color: #fff;
   font-size: 11px;
