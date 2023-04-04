@@ -299,15 +299,19 @@ body,
   content: "Create 'AiChat_chat name' for Ai chatbot \a 'AiCode_chat name' for coding helper \a 'AiAssist_chat name' for content assistant";
   position: absolute;
   width: 200px;
-  bottom: 40%;
-  left: -130px;
+  top: 50%;
+  left: 100%;
   transform: translate(-50%, 10px);
-  padding: 6px;
+  padding: 5px;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
   background-color: #333;
   color: #fff;
   font-size: 11px;
   border-radius: 4px;
-  white-space: pre-wrap;;
+  white-space: pre-wrap;
 }
 
 .ce-chat-list {
