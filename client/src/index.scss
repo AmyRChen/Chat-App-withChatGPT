@@ -296,7 +296,7 @@ body,
 
 // Add tooltip
 .ce-chat-form-button:hover::before {
-  content: "Create 'AiChat_chat name'";
+  content: "Create 'AiChat_chat name' for Ai chatbot \a 'AiCode_chat name' for coding helper \a 'AiAssist_chat name' for content assistant";
   position: absolute;
   width: 250px;
   bottom: 80%;
