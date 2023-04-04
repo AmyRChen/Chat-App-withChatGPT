@@ -16,6 +16,7 @@ const Chat = ({ user, secret }) => {
     user,
     secret
   );
+
   return (
     <div style={{ flexBasis: "100%" }}>
       {/* Give us authentication that connect to react chat engine */}
