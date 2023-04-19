@@ -1,5 +1,10 @@
 # Chat-App-withChatGPT
-- Production: https://chat-app-frontend-i0y4.onrender.com/
+Production: https://chat-app-frontend-i0y4.onrender.com/
+
+- Username for test: test-user1
+- Password for test: 123
+
+Environment: JavaScript, React, Node.js, Express.js, Redux, ChatEngine, ChatGPT API, Render
 
 This project is a Chat Application that uses ChatEngine for real-time communication and 
 integrates with OpenAI's Chatbot API powered by ChatGPT to provide intelligent and natural language conversations between users.
