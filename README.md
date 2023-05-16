@@ -1,4 +1,6 @@
 # Chat-App-withChatGPT
+This is a chat application that utilizes Chat Engine for real-time communication between users. It integrates with OpenAI's chatGPT API to enable intelligent and natural language conversations. Users can engage with an AI chatbot and connect with other users by adding them to chat groups. Within these groups, members can share photos and chat with their friends about their lives.
+
 Production: https://chat-app-frontend-i0y4.onrender.com/
 
 - Username for test: test-user1
