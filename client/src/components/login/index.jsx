@@ -9,6 +9,10 @@ const Login = ({ setUser, setSecret }) => {
   const [triggerSignUp] = usePostSignUpMutation();
 
   const handleLogin = () => {
+    if (username === null && password === null) {
+      setUsername("test-user1");
+      setPassword("123");
+    }
     triggerLogin({ username, password });
   };
 
@@ -38,7 +42,7 @@ const Login = ({ setUser, setSecret }) => {
           className="register-change"
           onClick={() => setIsRegister(!isRegister)}
         >
-          {isRegister ? "Already a user?" : "Are you a new user?"}
+          {isRegister ? "Already a user? You can also Login with Guest User account." : "Are you a new user? You can also Login with Guest User account."}
         </p>
 
         <div>
@@ -63,9 +67,14 @@ const Login = ({ setUser, setSecret }) => {
               Register
             </button>
           ) : (
-            <button type="button" onClick={handleLogin}>
-              Login
-            </button>
+            <>
+              <button type="button" onClick={handleLogin}>
+                Login
+              </button>
+              <button type="button" onClick={handleLogin}>
+                Guest User Login
+              </button>
+            </>
           )}
         </div>
       </div>
