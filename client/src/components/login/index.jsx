@@ -9,10 +9,12 @@ const Login = ({ setUser, setSecret }) => {
   const [triggerSignUp] = usePostSignUpMutation();
 
   const handleLogin = () => {
-    if (username === null && password === null) {
-      setUsername("test-user1");
-      setPassword("123");
-    }
+    triggerLogin({ username, password });
+  };
+  
+  const handleGuestLogin = () =>{
+    setUsername("test-user1");
+    setPassword("123");
     triggerLogin({ username, password });
   };
 
@@ -73,7 +75,7 @@ const Login = ({ setUser, setSecret }) => {
               <button type="button" onClick={handleLogin}>
                 Login
               </button>
-              <button type="button" onClick={handleLogin}>
+              <button type="button" onClick={handleGuestLogin}>
                 Guest User Login
               </button>
             </>
