@@ -42,7 +42,9 @@ const Login = ({ setUser, setSecret }) => {
           className="register-change"
           onClick={() => setIsRegister(!isRegister)}
         >
-          {isRegister ? "Already a user? You can also Login with Guest User account." : "Are you a new user? You can also Login with Guest User account."}
+          {isRegister 
+           ? "Already a user? You can also Login with Guest User account." 
+           : "Are you a new user? You can also Login with Guest User account."}
         </p>
 
         <div>
